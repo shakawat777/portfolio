@@ -77,7 +77,7 @@ nav a {
     justify-content: space-between;
 }
 
-.banner.profile-pic {
+.banner .profile-pic {
     width: 500px;
 }
 
@@ -112,7 +112,7 @@ main section {
 
 /* About section */
 .about {
-    margin: 130px;
+    padding: 130px;
     border-radius: 10px;
     background: #FFF8F3;
     margin: 130px 0;
@@ -235,14 +235,26 @@ textarea {
 
 /*Responsive for what i do section start */
 @media screen and (max-width:576px) {
-    .skills-container,.resume-container,footer {
+    .header{
+        background-image: none;
+    }
+    nav>ul,.banner,nav,.skills-container,.resume-container,
+    footer,.about-info-container {
         flex-direction: column;
     }
-
-    #what-i-do-description {
+    nav>ul{
+        gap: 10px;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    /* .btn-primary{
+        margin-bottom: 20px;
+    } */
+    .banner,#what-i-do-description {
         padding: 20px;
     }
-    footer{
+    footer,.about{
         padding: 10px;
     }
     .footer-column{
