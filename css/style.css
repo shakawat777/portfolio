@@ -125,7 +125,7 @@ main section {
 }
 
 #what-i-do-description {
-   padding: 30px 150px;
+    padding: 30px 150px;
 }
 
 /* Skill part start */
@@ -207,12 +207,14 @@ footer {
     width: 50%;
 
 }
-.social-link a{
+
+.social-link a {
     margin-right: 25px;
 
 }
 
-.contact input[type="text"], .contact input[type="email"],
+.contact input[type="text"],
+.contact input[type="email"],
 textarea {
     display: block;
     margin-bottom: 25px;
@@ -221,20 +223,40 @@ textarea {
     border-radius: 5px;
     background: #FFF;
     border: 0;
+    width: 100%;
 
 }
+
 /* Responsive style */
 /* for mobile device */
- .hide{
+.hide {
     display: none;
-} 
+}
+
 /*Responsive for what i do section start */
 @media screen and (max-width:576px) {
-    .skills-container{
-        flex-direction:column;
+    .skills-container,.resume-container,footer {
+        flex-direction: column;
     }
-    #what-i-do-description{
+
+    #what-i-do-description {
         padding: 20px;
     }
+    footer{
+        padding: 10px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
     
+}
+@media screen and(min-width:576px) and(max-width:960px){
+    /* .skills-container,.resume-container {
+        flex-direction: column;
+    } */
 }
